@@ -5,9 +5,9 @@ from psychopy import visual, core, event
 win = visual.Window([800, 600], monitor="testMonitor", units="deg", color=(0, 0, 0))
 
 # Create radial gratings for left and right hemifields
-grating_left  = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(10, 10), pos=(0, 0), visibleWedge=(0, 180), autoLog=False, ori=180)
+grating_left  = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(10, 10), pos=(0, 0), visibleWedge=(5, 175), autoLog=False, ori=180)
 
-grating_right = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(10, 10), pos=(0, 0), visibleWedge=(0, 180), autoLog=False)
+grating_right = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(10, 10), pos=(0, 0), visibleWedge=(5, 175), autoLog=False)
 
 # Fixation cross
 #fixation      = visual.ShapeStim(win, vertices=((0, -0.2), (0, 0.2), (0,0), (-0.2,0), (0.2, 0)), lineWidth=3, closeShape=False, lineColor="white")
