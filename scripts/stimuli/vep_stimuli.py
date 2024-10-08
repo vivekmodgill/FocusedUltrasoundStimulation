@@ -1,5 +1,9 @@
 from psychopy_visionscience.radial import RadialStim
 from psychopy import visual, core, event
+from rusocsci import buttonbox 
+ 
+# make a buttonbox
+bb = buttonbox.Buttonbox()
 
 # Create a window
 win = visual.Window([800, 600], monitor="testMonitor", units="deg", color=(0, 0, 0))
@@ -35,6 +39,8 @@ for run in range(num_runs):
     
     # Each run lasts 4 minutes
     while run_clock.getTime() < run_duration:
+        # Send trigger for flickering start
+        bb.sendMarker(val=100)
         # Flickering for 15 seconds
         flicker_clock = core.Clock()
         while flicker_clock.getTime() < flicker_duration:
@@ -59,6 +65,8 @@ for run in range(num_runs):
                 win.close()
                 core.quit()
 
+        # Send trigger for fixation start
+        bb.sendMarker(val=200)
         # Fixation-only period for 5 seconds
         fixation_clock = core.Clock()
         while fixation_clock.getTime() < fixation_duration:
