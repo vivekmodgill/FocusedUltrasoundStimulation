@@ -16,9 +16,9 @@ grating_right = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16,
 fixation = visual.ShapeStim(win, vertices=((0, -0.2), (0, 0.2), (0,0), (-0.2,0), (0.2, 0)), lineWidth=3, closeShape=False, lineColor="white")
 
 # Flicker properties
-hz_left  = 6   # Left visual hemifield frequency
-hz_right = 7.5 # Right visual hemifield frequency
-fps      = 60  # Assumed frame rate of the display
+hz_left  = 6    # Left visual hemifield frequency
+hz_right = 7.5  # Right visual hemifield frequency
+fps      = 120  # Assumed frame rate of the display
 
 # Calculate frames per cycle
 frames_per_cycle_left  = fps // hz_left
