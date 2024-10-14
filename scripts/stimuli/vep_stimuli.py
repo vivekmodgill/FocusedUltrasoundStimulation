@@ -25,12 +25,12 @@ frames_per_cycle_left  = fps // hz_left
 frames_per_cycle_right = fps // hz_right
 
 # Timing parameters for the experiment
-flicker_duration  = 15                                    # Flickering for 15 seconds
-fixation_duration = 5                                     # Fixation for 5 seconds
-block_duration    = flicker_duration + fixation_duration  # One block = flicker + fixation (20 seconds)
-run_duration      = 240                                   # 4 minutes per run = 240 seconds
-num_runs          = 4                                     # 4 runs in total (16 minutes)
-initial_fixation_duration = 10                            # Initial fixation for 10 seconds
+flicker_duration          = 15                                    # Flickering for 15 seconds
+fixation_duration         = 5                                     # Fixation for 5 seconds
+block_duration            = flicker_duration + fixation_duration  # One block = flicker + fixation (20 seconds)
+run_duration              = 240                                   # 4 minutes per run = 240 seconds
+num_runs                  = 4                                     # 4 runs in total (16 minutes)
+initial_fixation_duration = 10                                    # Initial fixation for 10 seconds
 
 # Display initial fixation point for 10 seconds
 fixation_clock = core.Clock()
