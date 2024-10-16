@@ -7,10 +7,11 @@ bb = buttonbox.Buttonbox()
 
 # Create a full-screen window
 win = visual.Window(fullscr=True, monitor="testMonitor", units="deg", color=(0, 0, 0))
+win.mouseVisible = False
 
 # Create radial gratings for left and right hemifields
-grating_left  = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(10, 10), pos=(0, 0), visibleWedge=(5, 175), autoLog=False, ori=180)
-grating_right = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(10, 10), pos=(0, 0), visibleWedge=(5, 175), autoLog=False)
+grating_left  = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(20, 20), pos=(0, 0), visibleWedge=(5, 175), autoLog=False, ori=180)
+grating_right = RadialStim(win, tex='sqrXsqr', radialCycles=8, angularCycles=16, size=(20, 20), pos=(0, 0), visibleWedge=(5, 175), autoLog=False)
 
 # Fixation cross
 fixation = visual.ShapeStim(win, vertices=((0, -0.2), (0, 0.2), (0,0), (-0.2,0), (0.2, 0)), lineWidth=3, closeShape=False, lineColor="white")
